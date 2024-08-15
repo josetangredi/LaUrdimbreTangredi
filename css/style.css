@@ -1,0 +1,25 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Para centrar verticalmente */
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  font-size: 25px;
+  margin-top: 500px;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+  max-width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+}
