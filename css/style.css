@@ -1,25 +1,191 @@
+* {
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Estilo para la barra superior del menú */
+.topbar-wrapper {
+  display: flex; /* Usa Flexbox para alinear elementos en una fila */
+  align-items: center; /* Centra verticalmente los elementos en la barra */
+  background-color: #ffffff; /* Fondo blanco para la barra superior */
+  padding: 30px; /* Espaciado alrededor del contenido */
+  border-bottom: 1px solid rgb(204, 204, 204); /* Línea negra debajo del menú */
+}
+
+/* Estilo para el logo */
+.logo img {
+  width: 80px; /* Ajusta el ancho del logo */
+  height: auto; /* Mantiene la proporción del logo */
+}
+
+.titulo__principal {
+  width: 300px;
+}
+
+/* Estilo para la lista de elementos del menú */
+.menu {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  display: flex; /* Usa flexbox para alinear los elementos en una fila */
+  justify-content: center;
+  margin-left: 500px; /* Espacio entre el logo y el menú */
+}
+
+/* Estilo para los elementos individuales del menú */
+.menu li {
+  margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+/* Estilo para los enlaces del menú */
+.menu .link {
+  color: rgb(58, 55, 55); /* Color negro para el texto del enlace */
+  text-transform: uppercase;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-weight: lighter; /* Estilo de fuente en negrita */
+  font-size: 16px; /* Tamaño de fuente */
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para los enlaces cuando se pasan por encima */
+.menu .link:hover {
+  color: darkgray; /* Color gris oscuro para el texto del enlace cuando se pasa el ratón por encima */
+}
+
+.cart-icon {
+  display: flex; /* Usa Flexbox para centrar el ícono verticalmente */
+  align-items: center; /* Centra verticalmente el ícono */
+  margin-left: auto; /* Alinea el ícono a la derecha */
+  margin-left: 50px; /* Añade margen izquierdo entre el menú y el ícono del carrito */
+  padding-bottom: 5px;
+}
+
+.cart-icon svg {
+  width: 30px; /* Ajusta el tamaño del ícono del carrito */
+  height: 30px; /* Ajusta el tamaño del ícono del carrito */
+  color: black; /* Color negro para el ícono del carrito */
+}
+
 .contenedor {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Para centrar verticalmente */
-  text-align: center;
+  justify-content: center; /* Centers the grid and text horizontally */
+  align-items: center; /* Aligns the text and grid on the same line vertically */
+  padding: 20px; /* Adds some padding around the content */
 }
 
-h1 {
+/* Styles for the text */
+.parrafo__principal {
+  font-family: Montserrat, "Open Sans", sans-serif;
+  color: #b07575;
+  font-size: 20px;
+  text-align: center; /* Align text to the left */
+  padding-right: 70px; /* Adds space between the text and the grid */
+  max-width: 500px; /* Adjust the width based on your layout needs */
+}
+
+/* Styles for the image grid */
+.image-grid {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 650px; /* Adjust the grid width to make it more centered */
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.titulo__productos {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   color: #000000;
   font-size: 25px;
-  margin-top: 500px;
+  margin-bottom: 20px;
 }
 
-.logo {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+  align-items: flex-start; /* Cambiado para evitar centrar todo verticalmente */
+  min-height: 100vh;
+  padding: 20px; /* Añadido para evitar que el contenido esté pegado a los bordes */
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-bottom: 20px; /* Añadido para evitar que el formulario esté demasiado pegado a otros contenidos */
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Añadido para controlar el layout de la galería y asegurar que las imágenes se vean correctamente */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Cambia este valor según el tamaño de tus imágenes */
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+  border-radius: 8px;
 }
