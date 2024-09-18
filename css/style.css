@@ -1,100 +1,98 @@
+/* Reseteo de estilos básicos */
 * {
-  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff;
 }
 
-/* Estilo para la barra superior del menú */
+/* Barra superior del menú */
 .topbar-wrapper {
-  display: flex; /* Usa Flexbox para alinear elementos en una fila */
-  align-items: center; /* Centra verticalmente los elementos en la barra */
-  background-color: #ffffff; /* Fondo blanco para la barra superior */
-  padding: 30px; /* Espaciado alrededor del contenido */
-  border-bottom: 1px solid rgb(204, 204, 204); /* Línea negra debajo del menú */
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
 }
 
-/* Estilo para el logo */
+/* Logo */
 .logo img {
-  width: 80px; /* Ajusta el ancho del logo */
-  height: auto; /* Mantiene la proporción del logo */
+  width: 80px;
+  height: auto;
 }
 
+/* Título principal */
 .titulo__principal {
+  margin-left: 20px;
   width: 300px;
 }
 
-/* Estilo para la lista de elementos del menú */
+/* Menú de navegación */
 .menu {
-  list-style: none; /* Elimina los puntos de la lista */
-  margin: 0; /* Elimina el margen predeterminado */
-  padding: 0; /* Elimina el relleno predeterminado */
-  display: flex; /* Usa flexbox para alinear los elementos en una fila */
-  justify-content: center;
-  margin-left: 500px; /* Espacio entre el logo y el menú */
+  display: flex;
+  list-style: none;
+  margin-left: auto;
 }
 
-/* Estilo para los elementos individuales del menú */
 .menu li {
-  margin: 0 15px; /* Espacio entre los elementos del menú */
+  margin: 0 15px;
 }
 
-/* Estilo para los enlaces del menú */
 .menu .link {
-  color: rgb(58, 55, 55); /* Color negro para el texto del enlace */
+  color: #3a3737;
   text-transform: uppercase;
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  font-weight: lighter; /* Estilo de fuente en negrita */
-  font-size: 16px; /* Tamaño de fuente */
-  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-/* Estilo para los enlaces cuando se pasan por encima */
 .menu .link:hover {
-  color: darkgray; /* Color gris oscuro para el texto del enlace cuando se pasa el ratón por encima */
+  color: darkgray;
 }
 
+/* Ícono del carrito */
 .cart-icon {
-  display: flex; /* Usa Flexbox para centrar el ícono verticalmente */
-  align-items: center; /* Centra verticalmente el ícono */
-  margin-left: auto; /* Alinea el ícono a la derecha */
-  margin-left: 50px; /* Añade margen izquierdo entre el menú y el ícono del carrito */
-  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .cart-icon svg {
-  width: 30px; /* Ajusta el tamaño del ícono del carrito */
-  height: 30px; /* Ajusta el tamaño del ícono del carrito */
-  color: black; /* Color negro para el ícono del carrito */
+  width: 30px;
+  height: 30px;
+  color: black;
 }
 
+/* Contenedor principal */
 .contenedor {
   display: flex;
-  justify-content: center; /* Centers the grid and text horizontally */
-  align-items: center; /* Aligns the text and grid on the same line vertically */
-  padding: 20px; /* Adds some padding around the content */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Styles for the text */
+/* Texto principal */
 .parrafo__principal {
-  font-family: Montserrat, "Open Sans", sans-serif;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   color: #b07575;
   font-size: 20px;
-  text-align: center; /* Align text to the left */
-  padding-right: 70px; /* Adds space between the text and the grid */
-  max-width: 500px; /* Adjust the width based on your layout needs */
+  text-align: center;
+  padding-right: 70px;
+  max-width: 500px;
 }
 
-/* Styles for the image grid */
+/* imágenes inicio*/
 .image-grid {
-  padding-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  max-width: 650px; /* Adjust the grid width to make it more centered */
+  padding-top: 40px;
+  max-width: 650px;
 }
 
 .image-grid img {
@@ -103,82 +101,10 @@ body {
   object-fit: cover;
 }
 
-.titulo__productos {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: #000000;
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Cambiado para evitar centrar todo verticalmente */
-  min-height: 100vh;
-  padding: 20px; /* Añadido para evitar que el contenido esté pegado a los bordes */
-}
-
-.form-container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin-bottom: 20px; /* Añadido para evitar que el formulario esté demasiado pegado a otros contenidos */
-}
-
-.form-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.form-container label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.form-container input[type="text"],
-.form-container input[type="email"],
-.form-container select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.form-container button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.form-container button:hover {
-  background-color: #0056b3;
-}
-
-/* Añadido para controlar el layout de la galería y asegurar que las imágenes se vean correctamente */
+/* Galería de productos */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(250px, 1fr)
-  ); /* Cambia este valor según el tamaño de tus imágenes */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -186,6 +112,254 @@ body {
 .gallery img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
+  object-fit: cover;
   border-radius: 8px;
+}
+/* productos */
+.bg-rosa {
+  background-color: #ffc0cb; /* Rosa claro */
+}
+
+.contenedor__productos {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.titulo__productos {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 15px;
+}
+
+.imagen-contenedor {
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* Taller rectangle, increase padding for a more vertical shape */
+  overflow: hidden;
+  border-radius: 20px; /* Rounded corners */
+}
+
+.imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Ensure the image covers the container fully */
+  object-fit: cover;
+  border-radius: 16px; /* Ensure image matches container's rounded corners */
+}
+
+.fondo-especial {
+  background-color: lightblue; /* O usa background-image y otras propiedades */
+}
+
+.producto-titulo {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px; /* Adjust margin to control space between image and title */
+}
+
+.producto-precio {
+  font-size: 18px;
+  text-align: left;
+  color: #333;
+  margin-top: 2px; /* Adjust margin to control space between title and price */
+}
+
+/*inspiracion*/
+
+.flex-container {
+  padding-top: 100px;
+  padding-bottom: 160px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+  gap: 13px; /* Espacio entre las imágenes */
+  justify-content: center;
+}
+
+.flex-container img {
+  width: 300px; /* Ancho fijo para las imágenes */
+  height: auto; /* Mantiene la proporción de las imágenes */
+  transform: translateY(
+    calc(10px * var(--index))
+  ); /* Desplaza las imágenes en el eje Y */
+}
+
+/* Opcional: Establece un índice para cada imagen para el desplazamiento */
+.flex-container img:nth-child(1) {
+  --index: 3;
+}
+.flex-container img:nth-child(2) {
+  --index: 8;
+}
+.flex-container img:nth-child(3) {
+  --index: 0;
+}
+.flex-container img:nth-child(4) {
+  --index: 8;
+}
+.flex-container img:nth-child(5) {
+  --index: 1;
+}
+.flex-container img:nth-child(6) {
+  --index: 7;
+}
+/* Añade más reglas para más imágenes */
+
+.titulo__inspo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: lighter;
+  padding-top: 30px;
+}
+
+.linea-rosa {
+  height: 1px; /* Grosor de la línea */
+  background-color: #b07575; /* Color de la línea */
+  margin: 20px 0; /* Espaciado arriba y abajo de la línea */
+}
+
+.contenedor__packaging {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center; /* Para centrar el texto y las imágenes */
+}
+
+.packaging__imagenes {
+  display: flex;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 30px; /* Espacio entre las imágenes */
+  margin-top: 20px; /* Espacio entre el texto y las imágenes */
+}
+
+.packaging__imagen {
+  max-width: 350px; /* Ajusta el ancho máximo de las imágenes si es necesario */
+  height: 290px; /* Ajusta la altura fija para que ambas imágenes sean iguales */
+  object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin distorsión */
+}
+
+.titulo__packaging {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 32px;
+}
+
+.parrafo__packaging {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  color: #3a3737;
+  font-size: 20px;
+  text-align: center;
+  max-width: 1200px; /* Ajustar el ancho para que el texto ocupe más líneas */
+  margin: 30px auto; /* Centrar el contenedor en la página */
+  line-height: 1.6; /* Aumentar el espaciado entre líneas para mayor legibilidad */
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #e6e6e6; /* Color de fondo */
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacto__seccion {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* Estilos para la información de contacto */
+.info__contacto p {
+  font-size: 20px;
+  margin: 5px 0;
+  color: 333;
+}
+
+.info__contacto a {
+  color: #333;
+  text-decoration: none;
+}
+
+.info__contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el contenedor de colores */
+.contenedor__colores {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.colores__imagen img {
+  max-width: 200px;
+  height: auto;
+}
+.cart-icon {
+  width: 40px;
+  margin-left: 10px; /* Empuja el ícono del carrito al extremo derecho */
+}
+
+.cart-icon img {
+  width: 100%; /* Asegura que la imagen del ícono se ajuste al contenedor */
+}
+
+#seccion2 {
+  position: relative;
+}
+
+/* Ajusta la posición de la card del carrito y el espaciado de los botones */
+.cart-card {
+  position: fixed; /* Cambiado de absolute a fixed para mantenerlo visible */
+  top: 110px; /* Ajusta esta propiedad para posicionar la card más abajo */
+  right: 20px; /* Ajusta el margen desde el borde derecho */
+  background-color: rgb(234, 234, 234);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-width: 300px;
+  height: auto; /* Permite que la card crezca en altura si hay muchos ítems */
+  overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado largo */
+}
+
+.cart-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-card li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0; /* Aumenta el espacio entre ítems */
+  border-bottom: 1px solid #ddd; /* Agrega una línea separadora entre ítems */
+}
+
+.boton-eliminar {
+  background: rgb(234, 180, 180);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px; /* Aumenta el espacio dentro del botón */
+  cursor: pointer;
+  margin-left: 10px; /* Espacio entre el texto y el botón */
+  margin-top: 2px; /* Espacio arriba del botón para evitar el choque con otros elementos */
+}
+
+.hidden {
+  display: none;
 }
