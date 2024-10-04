@@ -1,0 +1,42 @@
+[
+  {
+    "img": "../multimedia/cojines3.jpg",
+    "nombre": "Almohadones",
+    "precio": "26000"
+  },
+  {
+    "img": "../multimedia/mantas1.jpg",
+    "nombre": "Mantas",
+    "precio": "32000"
+  },
+  {
+    "img": "../multimedia/dispenser1.jpg",
+    "nombre": "Dispensers",
+    "precio": "13000"
+  },
+  {
+    "img": "../multimedia/canasta.jpg",
+    "nombre": "Canastas",
+    "precio": "11000"
+  },
+  {
+    "img": "../multimedia/spray1.jpg",
+    "nombre": "Sprays",
+    "precio": "15000"
+  },
+  {
+    "img": "../multimedia/individuales2.jpg",
+    "nombre": "Indiviuales",
+    "precio": "12000"
+  },
+  {
+    "img": "../multimedia/botellones.jpg",
+    "nombre": "Botellones",
+    "precio": "12000"
+  },
+  {
+    "img": "../multimedia/cojines2.jpg",
+    "nombre": "Puff",
+    "precio": "43000"
+  }
+]

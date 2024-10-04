@@ -115,16 +115,8 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
-/* productos */
-.bg-rosa {
-  background-color: #ffc0cb; /* Rosa claro */
-}
 
-.contenedor__productos {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 64px 16px;
-}
+/* productos */
 
 .titulo__productos {
   text-align: left;
@@ -138,28 +130,6 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 15px;
-}
-
-.imagen-contenedor {
-  position: relative;
-  width: 100%;
-  padding-top: 150%; /* Taller rectangle, increase padding for a more vertical shape */
-  overflow: hidden;
-  border-radius: 20px; /* Rounded corners */
-}
-
-.imagen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Ensure the image covers the container fully */
-  object-fit: cover;
-  border-radius: 16px; /* Ensure image matches container's rounded corners */
-}
-
-.fondo-especial {
-  background-color: lightblue; /* O usa background-image y otras propiedades */
 }
 
 .producto-titulo {
@@ -362,4 +332,110 @@ body {
 
 .hidden {
   display: none;
+}
+/* Ocultar el formulario */
+.ocultar {
+  display: none;
+}
+
+/* Fondo translúcido */
+#formFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100; /* Asegura que esté encima de todo */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  animation: fadeIn 0.5s; /* Animación de desvanecimiento */
+}
+
+/* Estilos del contenedor del formulario */
+#formContenedor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrado perfecto */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  z-index: 101; /* Asegura que esté por encima del fondo */
+}
+
+/* Estilos del formulario */
+#contactoForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#contactoForm h2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#contactoForm label {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#contactoForm input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contactoForm button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #ce959f;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+#contactoForm button[type="button"] {
+  background-color: #737272;
+}
+
+#contactoForm button:hover {
+  background-color: #c08da4;
+}
+
+#contactoForm button[type="button"]:hover {
+  background-color: #888888;
+}
+
+/* Estilos de error */
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+/* Ajustes de responsividad */
+@media (max-width: 400px) {
+  #formContenedor {
+    width: 90%; /* Reduce el ancho en pantallas pequeñas */
+  }
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
